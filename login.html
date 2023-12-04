@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en-US">
+    <!-- Head section - contains page title and site metadata -->
+    <head>
+        <title>Agora: Login</title>
+        <link rel="stylesheet" href="css/mainstyle.css">
+        <link rel="stylesheet" href="css/login.css">
+		<meta charset="UTF-8">
+		<meta name="description" content="Landing Page">
+		<meta name="keywords" content="Agora, Agora Website, Agora Social Site, Agora Social Website, Agora Social Media Site, Agora Social Media Website, Social, Social Media">
+		<meta name="author" content="John Cinek">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="scripts/users.js"></script>
+    </head>
+    <body>
+        <main class="loginMain">
+            <form id="myForm">
+                <h2>Login</h2>
+                <input id="userName" type="text" placeholder="Username">
+
+                <a href="home.html" id="enterButton" onclick="checkUser(), getUser()">Enter</a>
+
+                <a href="publichome.html">Visit Public Site</a>
+
+                <a href="index.html">Return To Landing Page</a>
+
+                <p>&copy; John Cinek 2023</p>
+
+                <p id="hiddenText"></p>
+            </form>
+        </main>
+    </body>
+</html>

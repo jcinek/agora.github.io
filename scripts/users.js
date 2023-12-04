@@ -1,0 +1,3 @@
+/* Minified JavaScript */
+
+const userNames=["JT","Professor","Anon"];function checkUser(){let e=document.getElementById("userName").value;for(let t=0;t<=userNames.length;t++)if(e==userNames[t])return uName=userNames[t],alert("Welcome back, "+userNames[t]+"."),uName;document.getElementById("enterButton").href="login.html",alert("You have entered an incorrect username, please try again!")}function getUser(){setName=uName,sessionStorage.setItem("savedName",setName),sessionStorage.getItem("savedName")}

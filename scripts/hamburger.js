@@ -1,0 +1,3 @@
+/* Minified JavaScript */
+
+const hamburger=document.querySelector(".hamburger"),navMenu=document.querySelector(".hamburgerNav");hamburger.addEventListener("click",()=>{hamburger.classList.toggle("active"),navMenu.classList.toggle("active")}),document.querySelectorAll(".nav-link").forEach(e=>e.addEventListener("click",()=>{hamburger.classList.remove("active"),navMenu.classList.remove("active")}));
