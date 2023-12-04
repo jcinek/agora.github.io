@@ -1,3 +1,206 @@
-/* Minified CSS */
+body {
+    background-color: #f3f2f3;
+    margin: 0;
+    padding: 0;
+}
 
-#message-form,header{text-align:center}#chat,#message-form{display:flex;padding:.8em;width:60vw}button,input{border-radius:1em;border-style:none}body{background-color:#f3f2f3;margin:0;padding:0}li{list-style-type:none;margin-bottom:10px;background-color:#282545;padding:.6em;border-radius:10px;color:#fff;font-size:.95em;width:50%;inline-size:50%;overflow-wrap:break-word}.sent span,button,li span{color:#f5f5f5}.chatNavItem{background-color:transparent}li span{font-size:1.01em;font-weight:bolder}#chatWrapper{margin-top:7em;margin-left:11em}#chat{flex-direction:column-reverse;background:url(../assets/ag_backrndgradient_1.jpg) center center/cover no-repeat fixed;margin:auto;border-radius:.5em .5em 0 0;height:70vh;overflow-y:scroll;overflow-x:hidden}#messages{padding:2em 2em 3em;margin-top:0;margin-bottom:0}#chat::-webkit-scrollbar{width:10px}#chat::-webkit-scrollbar-track{margin:.5em;background:#1b1b1b;border-radius:.4em}#chat::-webkit-scrollbar-thumb{background:#3d3d3d;border-radius:.4em}#message-form{justify-content:space-evenly;margin:auto auto 2em;border-bottom-left-radius:.5em;border-bottom-right-radius:.5em;background-color:#1b1b1b}input{width:75%;height:2.1em;margin-left:.8em;padding:.5em;background-color:#b9b9b9}button{width:10%;height:3em;margin-right:.5em;margin-left:.5em;background-color:#585858}button:hover{background-color:#995486;transition:.13s ease-in}.sent{text-align:left;background-color:#70315e;margin-left:48%}.sent span{margin-left:5px}.receive{margin-right:48%}@media all and (max-width:1145px){#chat,#message-form{width:70vw}}@media all and (max-width:1000px){#chat,#message-form{width:100vw;padding-right:0;padding-left:0}body{overflow:hidden}#chatWrapper{display:flex;flex-direction:column;position:fixed;margin:0;bottom:0}#chat{height:90vh}#message-form{margin-bottom:0;border-bottom-left-radius:0;border-bottom-right-radius:0}.sent{margin-left:44%}.receive{margin-right:44%}}@media all and (max-width:700px){input{width:70%;margin:0}button{width:12%;margin:0}}@media all and (max-width:500px){button{text-align:center;width:16%}}@media all and (max-width:300px){button{width:18%;margin:0}}
+header {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    background-color: #282545;
+    padding: .6em;
+    border-radius: 10px;
+    color: white;
+    font-size: .95em;
+    width: 50%;
+    inline-size: 50%;
+    overflow-wrap: break-word;
+}
+
+.chatNavItem {
+    background-color: transparent;
+}
+
+li span {
+    font-size: 1.01em;
+    font-weight:bolder;
+    color: whitesmoke;
+}
+
+#chatWrapper {
+    margin-top: 7em;
+    margin-left: 11em;
+}
+
+#chat {
+    display: flex;
+    flex-direction: column-reverse;
+    background: url(../assets/ag_backrndgradient_1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin: auto;
+    padding: .8em;
+    border-radius: .5em;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 60vw;
+    height: 70vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#messages {
+    padding: 2em;
+    padding-bottom: 3em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#chat::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+#chat::-webkit-scrollbar-track {
+    margin: .5em;
+    background: #1b1b1b; 
+    border-radius: .4em;
+}
+
+/* Handle */
+#chat::-webkit-scrollbar-thumb {
+    background: #3d3d3d; 
+    border-radius: .4em;
+}
+
+#message-form {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-bottom: 2em;
+    padding: .8em;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+    text-align: center;
+    width: 60vw;
+    background-color: #1b1b1b;
+}
+
+input {
+    width: 75%;
+    height: 2.1em;
+    border-radius: 1em;
+    border-style: none;
+    margin-left: .8em;
+    padding: .5em;
+    background-color: #b9b9b9;
+}
+
+button {
+    color: whitesmoke;
+    width: 10%;
+    height: 3em;
+    border-radius: 1em;
+    border-style: none;
+    margin-right: .5em;
+    margin-left: .5em;
+    background-color: rgb(88, 88, 88);
+}
+
+button:hover {
+    background-color: #995486;
+    transition: ease-in .13s;
+}
+
+.sent {
+    text-align: left;
+    background-color: #70315E;
+    margin-left: 48%;
+}
+
+.sent span {
+    margin-left: 5px;
+    color: whitesmoke;
+}
+
+.receive {
+    margin-right: 48%;
+}
+
+@media all and (max-width: 1145px) {
+    #chat {
+        width: 70vw;
+    }
+
+    #message-form {
+        width: 70vw;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    body {
+        overflow: hidden;
+    }
+
+    #chatWrapper {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        margin: 0;
+        bottom: 0;
+    }
+
+    #chat {
+        height: 90vh;
+        width: 100vw;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #message-form {
+        width: 100vw;
+        margin-bottom: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .sent {
+        margin-left: 44%;
+    }
+
+    .receive {
+        margin-right: 44%;
+    }
+
+}
+
+@media all and (max-width: 700px) {
+    input {
+        width: 70%;
+        margin: 0;
+    }
+
+    button {
+        width: 12%;
+        margin: 0;
+    }
+}
+
+@media all and (max-width: 500px) {
+    button {
+        text-align: center;
+        width: 16%;
+    }
+}
+
+@media all and (max-width: 300px) {
+    button {
+        width: 18%;
+        margin: 0;
+    }
+}

@@ -1,3 +1,93 @@
-/* Minified CSS */
+body {
+    margin: 0px;
+    background: transparent;
+    background-color: #0f0f0f;
+}
 
-h1,p{color:#f5f5f5;font-weight:300}body{margin:0;background:#0f0f0f}h1{margin:0 0 .8em;font-size:3em;background-color:transparent;font-family:Georgia,'Times New Roman',Times,serif}.indexMain{display:flex;flex-direction:column;align-items:center;justify-content:center;height:85vh}.indexWrapper{display:flex;flex-direction:column;justify-content:center;align-items:center;background-color:rgba(0,0,0,.8);box-shadow:0 0 4em #995485e8;border-radius:.5em;padding:3em 1em 2em;width:35em;text-align:center}.indexWrapper a{color:#f5f5f5;text-decoration:none;margin-bottom:1em}.indexWrapper a:hover{color:#995485;text-decoration:underline}p{font-size:.9em;margin-top:1em;margin-bottom:0;padding:0}.backvideo{position:absolute;right:0;bottom:0;z-index:-1}@media all and (max-width:1185px){.indexWrapper{width:28em}.backvideo{display:none}}@media all and (max-width:600px){.indexWrapper{font-size:.9em;width:20em}.indexWrapper a{font-size:1.25em}}@media all and (max-width:350px){.indexWrapper{font-size:.8em;width:18em}}
+h1 {
+    margin: 0px;
+    font-size: 3em;
+    color: whitesmoke;
+    background-color: transparent;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    margin-bottom: .8em;
+}
+
+.indexMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+
+.indexWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 4em #995485e8;
+    border-radius: .5em;
+    padding: 1em;
+    padding-top: 3em;
+    padding-bottom: 2em;
+    width: 35em;
+    text-align: center;
+}
+
+.indexWrapper a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.indexWrapper a:hover {
+    color: #995485;
+    text-decoration: underline;
+}
+
+p {
+    color: whitesmoke;
+    font-size: .9em;
+    font-weight: 300;
+    margin-top: 1em;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.backvideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media all and (max-width: 1185px) {
+    .indexWrapper {
+        width: 28em;
+    }
+
+    .backvideo {
+        display: none;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .indexWrapper {
+        font-size: .9em;
+        width: 20em;
+    }
+
+    .indexWrapper a {
+        font-size: 1.25em;
+    }
+}
+
+@media all and (max-width: 350px) {
+    .indexWrapper {
+        font-size: .8em;
+        width: 18em;
+    }
+}
