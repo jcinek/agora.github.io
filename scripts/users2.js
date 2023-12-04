@@ -1,3 +1,3 @@
-/* Minified JavaScript */
+getName = sessionStorage.getItem("savedName");
 
-getName=sessionStorage.getItem("savedName"),document.getElementById("savedName").innerHTML=getName;
+document.getElementById("savedName").innerHTML = getName;
